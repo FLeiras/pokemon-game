@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import PokemonImage from '@/components/PokemonImage.vue'
-import PokemonOptions from '@/components/PokemonOptions'
+import PokemonImage from '@/components/PokemonImage.vue';
+import PokemonOptions from '@/components/PokemonOptions.vue';
 </script>
