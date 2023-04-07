@@ -7,6 +7,10 @@
       <h1>¿Quién es este pokémon?</h1>
       <PokemonImage :pokemonId="pokemon.id" :showPokemon="showPokemon" />
       <PokemonOptions :pokemons="pokemonArr" @selection="respAnwser" />
+      <div class="points">
+        <h2>Tu Puntaje: {{ count }}</h2>
+        <button @click="count = 0">Volver a cero</button>
+      </div>
       <div class="container-message" v-if="showAnswer">
         <h2 class="fade-in">{{ message }}</h2>
         <button class="btnPokemonPage" @click="newGame">Nuevo Juego</button>
@@ -29,6 +33,7 @@ export default {
       showPokemon: false,
       showAnswer: false,
       message: "",
+      count: 0
     };
   },
   methods: {
@@ -42,8 +47,9 @@ export default {
       this.showPokemon = true;
       this.showAnswer = true;
 
-      if (selectedId === this.pokemon.id) {
+      if (selectedId === this.pokemon.id) { 
         this.message = `Correcto, ${this.pokemon.name.toUpperCase()}`;
+        this.count += 1;
       } else {
         this.message = `Oops, era ${this.pokemon.name.toUpperCase()}`;
       }

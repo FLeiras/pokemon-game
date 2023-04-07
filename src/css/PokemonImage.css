@@ -6,7 +6,7 @@
 .pokemon-container img {
   height: 17rem;
   position: absolute;
-  left: 32.5rem;
+  left: 35rem;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -19,17 +19,41 @@
   filter: brightness(0);
 }
 
-@media (max-width: 768px) {
-  .pokemon-container img {
-    height: 17rem;
-    left: 27rem;
-  }
-}
-
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .pokemon-container img {
     height: 17rem;
     width: 12.5rem;
     left: 15rem;
+  }
+}
+
+@media (min-width: 412px) {
+  .pokemon-container img {
+    height: 17rem;
+    width: 12.5rem;
+    left: 12rem;
+    top: -1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pokemon-container img {
+    height: 17rem;
+    left: 23.5rem;
+    top: 0.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pokemon-container img {
+    left: 28rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .pokemon-container img {
+    height: 15rem;
+    width: 18rem;
+    left: 24rem;
   }
 }
