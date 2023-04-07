@@ -1,0 +1,35 @@
+.pokemon-container {
+  height: 200px;
+  position: relative;
+}
+
+.pokemon-container img {
+  height: 17rem;
+  position: absolute;
+  left: 32.5rem;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+
+  transform: translateX(-50%);
+}
+.hidden-pokemon {
+  filter: brightness(0);
+}
+
+@media (max-width: 768px) {
+  .pokemon-container img {
+    height: 17rem;
+    left: 27rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .pokemon-container img {
+    height: 17rem;
+    width: 12.5rem;
+    left: 15rem;
+  }
+}

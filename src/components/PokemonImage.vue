@@ -4,7 +4,9 @@
     class="hidden-pokemon"
     alt="pokemon">
 
-<img v-if="showPokemon" :src="imgSrc"
+<img v-if="showPokemon"
+  class="fade-in"
+  :src="imgSrc"
   alt="pokemon">
   </div> 
 </template>
@@ -31,26 +33,6 @@ export default {
 </script>
 
 <style scoped>
-
-.pokemon-container {
-    height: 200px;
-    position: relative;
-}
-
-img {
-    height: 200px;
-    position: absolute;
-    left: 55%;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-
-    transform: translateX(-50%);
-}
-.hidden-pokemon {
-    filter: brightness(0);
-}
+@import '../css/PokemonImage.css';
 </style>
   
