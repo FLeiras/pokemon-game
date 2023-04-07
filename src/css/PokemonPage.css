@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  background-image: url("../assets/pokemonPage-image.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container h1 {
+  font-size: 80px;
+  margin: 0.5rem;
+}
+
+.loading {
+  margin-top: 25rem;
+}
+
+.container-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
+}
+
+.btnPokemonPage {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .container-message {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .container-message {
+    font-size: 20px;
+  }
+}
