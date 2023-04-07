@@ -25,6 +25,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 60px;
+  margin-top: -3rem;
 }
 
 .btnPokemonPage {
@@ -35,26 +36,111 @@
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.points {
+  display: grid;
+  justify-items: center;
+}
+
+.points button {
+  background-color: #cce3de;
+  border-radius: 5px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 0.25rem;
+  width: 9vw;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+@media (min-width: 375px) {
+  .container h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .container-message {
+    font-size: 20px;
+  }
+
+  .points {
+    display: grid;
+    justify-items: center;
+    margin: -1.5rem 0 2rem 2.5rem;
+  }
+
+  .points button {
+    width: 40vw;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 412px) {
+  .container h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .container-message {
+    font-size: 20px;
+  }
+
+  .points {
+    display: grid;
+    justify-items: center;
+    margin: -5rem 0 2rem 2.5rem;
+  }
+
+  .points button {
+    width: 40vw;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
   .container h1 {
     font-size: 60px;
     text-align: center;
   }
 
   .container-message {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 375px) {
-  .container h1 {
-    text-align: center;
     font-size: 50px;
   }
 
+  .points {
+    display: grid;
+    justify-items: center;
+    margin: -5rem 0 2rem 2.5rem;
+  }
+
+  .points button {
+    width: 20vw;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
   .container-message {
+    font-size: 50px;
+  }
+
+  .points {
+    display: grid;
+    justify-items: center;
+    margin: 0 0 2rem 2.5rem;
+  }
+
+  .points button {
+    width: 10vw;
     font-size: 20px;
   }
 }

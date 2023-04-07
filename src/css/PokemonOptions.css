@@ -24,7 +24,27 @@ li:hover {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) {
+  ul {
+    margin: 5rem 0 1rem 0;
+  }
+
+  li {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 412px) {
+  ul {
+    margin: 0 0 5rem 0;
+  }
+
+  li {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 768px) {
   ul {
     margin: 5rem 0 5rem 0;
   }
@@ -34,12 +54,12 @@ li:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 1280px) {
   ul {
-    margin: 5rem 0 1rem 0;
+    margin: 2.5rem 0 0 0;
   }
 
   li {
-    width: 40vw;
+    width: 15vw;
   }
 }
