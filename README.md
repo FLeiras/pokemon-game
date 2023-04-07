@@ -1,7 +1,31 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Vue 3.2.45 || Vite ^4.1.0
 
-## Recommended IDE Setup
+#
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Pokemon Game
+
+### App interactiva donde el objetivo es adivinar a que Pokemon pertenece la silueta.
+
+#
+
+- Fork o Clone
+
+```
+https://github.com/FLeiras/pokemon-game
+```
+
+- Abra el proyecto en su editor de codigo preférido.
+
+```
+<directorio> code .
+```
+
+- Desde su terminal ejecute
+
+```
+npm run dev
+```
+
+## ¡Listo!

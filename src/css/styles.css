@@ -1,11 +1,13 @@
-html, body {
-    background-color: #f1f1f1;
-    margin: 0px;
+html,
+:root {
+  --primary: #161a1d;
+  --secondary: #ffd7ba;
+
+  --primaryFont: "Ubuntu", sans-serif;
 }
 
-#app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+body {
+  background-color: #f1f1f1;
+  font-family: Ubuntu;
+  margin: 0px;
 }
